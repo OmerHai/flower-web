@@ -1,0 +1,97 @@
+/* Background class for background color and image in section homepage */
+.background-homepage {
+    height: 80vh;
+    background: linear-gradient(#fff, #ACDE80);
+}
+
+/* Styles for background gradient */
+
+.background-grad {
+    width:40%;
+    text-align: center;
+    padding: 3% 5%;
+}
+
+.logo {
+    height: 40%;
+    width: 50%;
+}
+
+.slogan {
+    font-family: 'Indie Flower', cursive;
+    color: #21810A;
+    font-size: 1.2rem;
+    margin-top: 10%;
+}
+
+.download-button-android {
+    margin: 10% 3% 3%;
+}
+
+.download-button-apple {
+    margin: 10% 3% 3%;
+}
+
+
+
+
+/* Styles for the background image*/
+.background-image {
+    height: 100%;
+    width: 60%;
+    clip-path: polygon(25% 0, 100% 0%, 100% 100%, 9% 100%);
+}
+
+/* Styles for features section */
+#features {
+    
+    height: 80vh;
+}
+
+.feature-par {
+    height: 70%;
+    text-align: center;
+}
+
+.feature {
+    text-align: center;
+    padding-top: 7%;
+}
+
+.feature-icon {
+    color: #21810A;
+}
+
+.feature-icon:hover {
+    color: #ACDE80;
+}
+
+.feature-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    padding: 3% 0;
+
+}
+
+.feature-text {
+    font-family: 'Indie Flower', cursive;
+}
+
+.sunflowers-par {
+    height: 30%;
+}
+
+.left-flowers {
+    text-align: left;
+}
+
+.right-flowers {
+    text-align: right;
+}
+
+.big-sunflower {
+    height: 100%;
+    width: 10%;
+
+}
+
