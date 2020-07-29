@@ -1,97 +1,171 @@
-/* Background class for background color and image in section homepage */
+
+    /******* Global Styles  *********/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+
+.content {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 5rem;
+    display: flex;
+}
+
+
+        /******* HomePage Styles  *********/  
+/* Linear gradient styles for the left side of the page */
 .background-homepage {
     height: 80vh;
+    max-width: 100%;
+    margin:0;
     background: linear-gradient(#fff, #ACDE80);
 }
 
-/* Styles for background gradient */
-
-.background-grad {
-    width:40%;
+/* Left side cotainer styles */
+.left-container {
+    width: 40%;
     text-align: center;
-    padding: 3% 5%;
+    padding: 7rem 0;
+    padding-left: 3rem;
 }
 
 .logo {
-    height: 40%;
-    width: 50%;
+    height: 20rem;
+    width: 20rem;
 }
 
+
 .slogan {
-    font-family: 'Indie Flower', cursive;
     color: #21810A;
-    font-size: 1.2rem;
-    margin-top: 10%;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 4rem 0;
 }
 
 .download-button-android {
-    margin: 10% 3% 3%;
+    margin: 2rem;
 }
 
 .download-button-apple {
-    margin: 10% 3% 3%;
+    margin: 2rem;
 }
 
-
-
-
-/* Styles for the background image*/
+/* Background image in right side styles*/
 .background-image {
     height: 100%;
-    width: 60%;
-    clip-path: polygon(25% 0, 100% 0%, 100% 100%, 9% 100%);
+    width: 40%;
+    padding: 0;
 }
 
-/* Styles for features section */
-#features {
+    /******* Phone Styles  *********/
+/*Ipad styles*/
+@media screen and (max-width:280px){
+
+    .logo {
+        height: 12rem;
+        width: 12rem;
+    }
+
+    .slogan {
+        font-size: 1rem;
+    }
+
+    .download-button-android {
+        margin: 1rem;
+        padding: 0.5rem;
+    }
+
+    .download-button-apple {
+        margin: 1rem;
+        padding: 0.5rem;
+    }
+
+}
+
+@media screen and (max-width:360px) and (min-width:281px){
+
+    .logo {
+        height: 15rem;
+        width: 15rem;
+    }
+
+    .slogan {
+        font-size: 1.3rem;
+    }
+
+    .download-button-android {
+        margin: 1rem;
+    }
+
+    .download-button-apple {
+        margin: 1rem;
+    }
+
+}
+
+
+
+@media screen and (min-width:361px) and (max-width:414px){
+
+    .logo {
+        height: 15rem;
+        width: 15rem;
+    }
+
+    .left-container {
+        padding-top: 12rem;
+    }
+
+    .slogan {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width:450px) and (max-width:700px){
+
+    .logo {
+        height: 15rem;
+        width: 15rem;
+    }
     
-    height: 80vh;
+    .left-container {
+        padding-top: 8rem;
+    }
+
+
+    .slogan {
+        font-size: 1.3rem;
+    }
 }
 
-.feature-par {
-    height: 70%;
-    text-align: center;
+
+@media screen and (min-width:768px) and (max-width:1023px){
+
+    .left-container {
+        padding-top: 9rem;
+    }
+
+
+    .slogan {
+        font-size: 2rem;
+    }
 }
 
-.feature {
-    text-align: center;
-    padding-top: 7%;
-}
 
-.feature-icon {
-    color: #21810A;
-}
 
-.feature-icon:hover {
-    color: #ACDE80;
-}
 
-.feature-title {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    padding: 3% 0;
 
-}
 
-.feature-text {
-    font-family: 'Indie Flower', cursive;
-}
-
-.sunflowers-par {
-    height: 30%;
-}
-
-.left-flowers {
-    text-align: left;
-}
-
-.right-flowers {
-    text-align: right;
-}
-
-.big-sunflower {
-    height: 100%;
-    width: 10%;
-
-}
 

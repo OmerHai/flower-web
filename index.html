@@ -20,42 +20,34 @@
 
 
     <!-- Google fonts: indie flower 400 regular, Montserrat semi 600S -->
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <!-- Font awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     
     <!-- Link to my css -->
     <link rel="stylesheet" href="css/styles.css">
 
-    <!-- import jquery -->
-    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-    <script>
-        $(".download-button-android").click(function(){
-            window.location.href = 'http://play.google.com/store/apps/details?id=com.truecaller&hl=en';
-        });
-        $(".download-button-apple").click(function () {
-            window.location.href =  window.location.href = 'http://itunes.apple.com/lb/app/truecaller-caller-id-number/id1053998412?mt=8';
-        });
-    </script>
-
+    <!-- Link to script -->
+    <script type="text/javascript" src="javascript/script.js"></script>
 </head>
 <body>
     <!-- First section for homepage that includes download for the app -->
     <section id="homepage">
         <div class="row background-homepage">
-            <div class="background-grad">
+            <div class="left-container col-6">
                 <img class="logo" src="images/logo.png" alt="logo">
                 <p class="slogan">Every flower is a soul blossoming in nature</p>
-                <button type="button" class="download-button-android btn btn-success btn-lg"><i class="fab fa-apple"></i> Download</button>
-                <button type="button" class="download-button-apple btn btn-outline-success btn-lg"><i class="fab fa-google-play"></i>
+                <button type="button" class="download-button-android btn btn-success btn-lg"><i class="fab fa-apple"></i>
+                    Download</button>
+                <button type="button" class="download-button-apple btn btn-outline-success btn-lg"><i
+                        class="fab fa-google-play"></i>
                     Download</button>
             </div>
-            <img class="background-image" src="images/background-image.jpg" alt="plant-image">
+            <img class="background-image col-6" src="images/background.png" alt="plant-image">
         </div>
     </section>
 
-    <!-- Second section for features page -->
+    <!-- Second section for features page 
     <section id="features">
         <div class="feature-par row">
             <div class="feature col-lg-4 col-sm-6">
@@ -85,7 +77,29 @@
                 <img class="big-sunflower" src="images/sunflower.png" alt="big-sunflower">
             </div>
         </div>
-        
-    </section>
+
+    </section>-->
+
+    <!-- Section for image sildeshow 
+    <section id="image-slideshow">
+        <div class="slideshow-container">
+            <div class="slide-show">
+               <img src="images/Eco-Friendly-Backyard.jpg" alt="slideshow" id="slide-image">
+                <div class="caption-text">Eco Friendly Backyard</div>
+            </div>
+            <div class="prev">&#10094;</div>
+            <div class="next">&#10095;</div>
+        </div>
+        <br>
+        <div class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>-->
 </body>
 </html>
