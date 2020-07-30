@@ -1,77 +1,12 @@
 
-    /******* Global Styles  *********/
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-}
-
-html {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 10px;
-    box-sizing: border-box;
-}
+@import "pages/features.css";
+@import "pages/homepage.css";
 
 
-.content {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 5rem;
-    display: flex;
-}
 
-
-        /******* HomePage Styles  *********/  
-/* Linear gradient styles for the left side of the page */
-.background-homepage {
-    height: 80vh;
-    max-width: 100%;
-    margin:0;
-    background: linear-gradient(#fff, #ACDE80);
-}
-
-/* Left side cotainer styles */
-.left-container {
-    width: 40%;
-    text-align: center;
-    padding: 7rem 0;
-    padding-left: 3rem;
-}
-
-.logo {
-    height: 20rem;
-    width: 20rem;
-}
-
-
-.slogan {
-    color: #21810A;
-    font-size: 1.6rem;
-    font-weight: bold;
-    margin: 4rem 0;
-}
-
-.download-button-android {
-    margin: 2rem;
-}
-
-.download-button-apple {
-    margin: 2rem;
-}
-
-/* Background image in right side styles*/
-.background-image {
-    height: 100%;
-    width: 40%;
-    padding: 0;
-}
-
-    /******* Phone Styles  *********/
-/*Ipad styles*/
-@media screen and (max-width:280px){
+  /******* Phone Styles  *********/
+    /* Galaxy fold styles */
+@media screen and (max-width:280px) {
 
     .logo {
         height: 12rem;
@@ -92,9 +27,15 @@ html {
         padding: 0.5rem;
     }
 
+    .small-sunflower, .big-sunflower {
+        display: none;
+    }
+
+
 }
 
-@media screen and (max-width:360px) and (min-width:281px){
+    /* Moto G4, Galaxy 5, iphone 5 styles */
+@media screen and (min-width:281px) and (max-width:360px) {
 
     .logo {
         height: 15rem;
@@ -102,7 +43,7 @@ html {
     }
 
     .slogan {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .download-button-android {
@@ -113,10 +54,13 @@ html {
         margin: 1rem;
     }
 
+    .small-sunflower, .big-sunflower {
+        display: none;
+    }
+
 }
 
-
-
+    /* Pixel 2 and 2xl, iphone 6-8, iphone x styles */
 @media screen and (min-width:361px) and (max-width:414px){
 
     .logo {
@@ -131,8 +75,13 @@ html {
     .slogan {
         font-size: 1.3rem;
     }
+
+    .small-sunflower, .big-sunflower {
+        display: none;
+    }
 }
 
+    /* Surface duo styles */
 @media screen and (min-width:450px) and (max-width:700px){
 
     .logo {
@@ -148,13 +97,18 @@ html {
     .slogan {
         font-size: 1.3rem;
     }
+
+    .small-sunflower, .big-sunflower {
+        display: none;
+    }
 }
 
-
-@media screen and (min-width:768px) and (max-width:1023px){
+    /* Ipad styles*/
+@media screen and (min-width:768px) and (max-width:768px){
 
     .left-container {
-        padding-top: 9rem;
+        padding: 14rem 10rem;
+
     }
 
 
@@ -163,9 +117,36 @@ html {
     }
 }
 
+   /* Ipad styles*/
+@media screen and (min-width:769px) and (max-width:1023px){
+
+    .left-container {
+        padding: 6rem 6rem;
+
+    }
 
 
+    .slogan {
+        font-size: 2rem;
+    }
+}
 
+    /* Ipad pro styles*/
+@media screen and (min-width:1024px) and (max-width:1024px){
+
+    .left-container {
+        padding: 30rem 0;
+        padding-left: 3rem;
+
+    }
+
+
+    .slogan {
+        font-size: 2.3rem;
+    }
+
+
+}
 
 
 

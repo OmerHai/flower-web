@@ -1,0 +1,59 @@
+/* Styles for features section */
+#features {
+    height: 80vh;
+}
+
+.feature-par {
+    height: 70%;
+    text-align: center;
+    margin: 0;
+    padding-top: 9rem;
+
+}
+
+.feature {
+    text-align: center;
+}
+
+.feature-icon {
+    color: #21810A;
+    padding-bottom: 2rem; 
+
+}
+
+.feature-icon:hover {
+    color: #ACDE80;
+
+}
+
+.feature-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.feature-text {
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+
+.sunflowers-par {
+    height: 30%;
+    margin: 0;
+}
+
+.left-flowers {
+    text-align: left;
+
+}
+
+.right-flowers {
+    text-align: right;
+
+}
+
+.small-sunflower {
+    padding-top: 6rem;
+}
+
