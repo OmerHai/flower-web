@@ -1,0 +1,247 @@
+/* Styles for slide show page */
+
+#image-slideshow {
+    height: 80vh;
+    background: linear-gradient( #ACDE80,#fff);
+    margin-top: 0.3rem;
+
+}
+
+.slideshow-container {
+    height: 80%;
+    width: 100%;
+    position: relative;
+    padding-top: 5rem;
+
+}
+
+.slide-show {
+    width: 100%;
+    height: 32rem;
+    background-color: transparent;
+}
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1.5s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.slide-show:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+
+/* Style the back side */
+.flip-card-back {
+  /*background: linear-gradient( #fff, rgb(218, 250, 210));*/
+  background-color:  #ACDE80;
+  color: green;
+  transform: rotateY(180deg);
+}
+
+.back-header {
+  margin: 0;
+  padding: 0;
+  color: green;
+}
+
+.back-text-container {
+  position: relative;
+
+}
+
+.back-text {
+  position: absolute;
+  left: 0%;
+  font-size: 1.8rem;
+  line-height: 3;
+  padding: 0;
+  width: 48%;
+  text-align: left;
+  margin-left: 2rem;
+  margin-top: 1.5rem;
+}
+
+.vertical-line {
+  border-left: 0.2rem dotted green;
+  height: 25rem;
+  position: absolute;
+  padding-left: 0;
+  left: 50%;
+  margin-top: 1.5rem;
+}
+
+.table-container {
+  padding: 0;
+  position: absolute;
+  right: 0%;
+  text-align: left;
+  width: 47%;
+  font-size: 1.8rem;
+  margin-top: 1.5rem;
+}
+
+td {
+  padding: 1rem 0;
+}
+
+.cost-header {
+  color: green;
+  font-weight: bold;
+}
+
+.closing-sentence {
+  font-weight: bold;
+  color: green;
+  font-size: 1.5rem;
+}
+.price {
+  padding-left: 12rem;
+}
+#slide-image {
+    width: 100%;
+    height: 32rem;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 1rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.prev {
+    left: 0.01%;
+}
+
+.next {
+    right: 0.1%;
+}
+/* Black ground when hover on the arrows*/
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.caption-text {
+    color: white;
+    text-align: center;
+    background-color: #222;
+    padding: 3rem 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.dots{
+    height: 20%;
+    position: absolute;
+    left: 45%;
+    margin-top: 10rem;
+}
+
+.dot {
+    cursor: pointer;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: 0 0.2rem;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+@media Screen and (max-width: 870px) {
+  
+  #image-slideshow {
+    margin-top: 0.3vh;
+
+  }
+
+  .slideshow-container {
+    padding-top: 5vh;
+    height: 60vh;
+  }
+
+  .slide-show {
+    height: 50vh;
+  }
+
+
+  .back-text {
+    font-size: 1.8vw;
+    line-height: 3vh;
+    margin-left: 2vw;
+    margin-top: 1.5vh;
+  }
+
+  .vertical-line {
+    border-left: 0.2vw dotted green;
+    height: 25vh;
+    margin-top: 1.5vh;
+  }
+
+  .table-container {
+    font-size: 1.8vw;
+    margin-top: 1.5vh;
+  }
+
+  td {
+    padding: 1vh 0;
+  }
+
+
+  .closing-sentence {
+    font-size: 1.5vw;
+  }
+
+  .price {
+    padding-left: 12vw;
+  }
+
+  #slide-image {
+      height: 32vh;
+  }
+
+  .prev, .next {
+      padding: 1vw;
+      font-size: 1.2vw;
+  }
+
+
+  .caption-text {
+      padding: 3vh 2vw;
+      font-size: 1.5vw;
+      font-weight: bold;
+  }
+
+  .dots{
+    margin-top: 3vh;
+    left: 42%;
+  }
+
+  .dot {
+      height: 1.5vh;
+      width: 1.5vw;
+      margin: 0 0.2vw;
+  }
+
+}

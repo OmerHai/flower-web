@@ -30,6 +30,9 @@ html {
     margin:0;
     background: linear-gradient(#fff, #ACDE80);
 }
+.row {
+    margin: 0;
+}
 
 /* Left side cotainer styles */
 .left-container {
@@ -66,4 +69,81 @@ html {
     height: 100%;
     width: 40%;
     padding: 0;
+}
+ /******* HomePage Styles  *********/  
+/* Linear gradient styles for the left side of the page */
+.background-homepage {
+    height: 80vh;
+    max-width: 100%;
+    margin:0;
+    background: linear-gradient(#fff, #ACDE80);
+}
+.row {
+    margin: 0;
+}
+
+/* Left side cotainer styles */
+.left-container {
+    width: 40%;
+    text-align: center;
+    padding: 7rem 0;
+    padding-left: 3rem;
+}
+
+.logo {
+    height: 20rem;
+    width: 20rem;
+}
+
+
+.slogan {
+    color: #21810A;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 4rem 0;
+}
+
+
+.download-button-android {
+    margin: 2rem;
+}
+
+.download-button-apple {
+    margin: 2rem;
+}
+
+/* Background image in right side styles*/
+.background-image {
+    height: 100%;
+    width: 40%;
+    padding: 0;
+}
+@media Screen and (max-width: 870px) {
+
+    /* Left side cotainer styles */
+    .left-container {
+        padding: 7vw 0;
+        padding-left: 3vw;
+    }
+
+    .logo {
+        height: 20vw;
+        width: 20vw;
+    }
+
+
+    .slogan {
+        font-size: 1.6vw;
+        margin: 4vw 0;
+    }
+
+
+    .download-button-android {
+        margin: 2vw;
+    }
+
+    .download-button-apple {
+        margin: 2vw;
+    }
+
 }

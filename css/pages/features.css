@@ -45,15 +45,50 @@
 
 .left-flowers {
     text-align: left;
+    padding-left: 0;
 
 }
 
 .right-flowers {
     text-align: right;
+    padding-right: 0;
 
 }
 
 .small-sunflower {
     padding-top: 6rem;
+}
+
+.big-sunflower {
+    padding-top: 0.2rem;
+}
+
+@media Screen and (max-width: 870px){
+    
+    .feature-par {
+        padding-top: 9vw;
+
+    }
+
+    .feature-icon {
+        padding-bottom: 2vw; 
+    }
+
+    .feature-title {
+        font-size: 2.2vw;
+    }
+
+    .feature-text {
+        font-size: 1.6vw;
+        line-height: 2vw;
+    }
+
+    .small-sunflower {
+        display: none;
+    }
+
+    .big-sunflower {
+        display: none;
+    }
 }
 

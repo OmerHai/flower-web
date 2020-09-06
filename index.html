@@ -80,26 +80,92 @@
 
     </section>
 
-    <!-- Section for image sildeshow 
+    <!-- Section for image sildeshow --> 
     <section id="image-slideshow">
         <div class="slideshow-container">
             <div class="slide-show">
-               <img src="images/Eco-Friendly-Backyard.jpg" alt="slideshow" id="slide-image">
-                <div class="caption-text">Eco Friendly Backyard</div>
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/Eco-Friendly-Backyard.jpg" alt="slideshow" id="slide-image">
+                        <div class="caption-text">Eco Friendly Backyard</div>
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="back-container">
+                            <h1 class="back-header">Eco Friendly Backyard</h1>
+                            <div class="back-text-container">
+                                <p class="back-text">An eco-friendly garden will have more natural features and local plants and trees in it. Instead of stocking your garden
+                                with exotic plants, plant local varieties of trees, flowers, and vegetables. These are easier to grow and more
+                                eco-friendly as they require fewer chemical fertilizers and pesticides.</p>
+                                <div class="vertical-line"></div>
+                                <div class="table-container">
+                                    <h4 class="cost-header">Landscape Design Costs</h4>
+                                    <table>
+                                        <tr>
+                                            <td>Average range:</td>
+                                            <td class="price">$4,000-$20,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Minimum cost:</td>
+                                            <td class="price">$3,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Maximum cost:</td>
+                                            <td class="price">$30,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Detailed plan:</td>
+                                            <td class="price">$2,000-$7,000</td>
+                                        </tr>
+                                    </table>
+                                    <p class="closing-sentence">Costs will vary depending on the size and location of the project.</p>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
             </div>
-            <div class="prev">&#10094;</div>
-            <div class="next">&#10095;</div>
+            <div class="prev" onClick="plusSlides(-1)">&#10094;</div>
+            <div class="next" onClick="plusSlides(1)">&#10095;</div>
         </div>
         <br>
         <div class="dots">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
+            <span onClick="activeDot(0)" class="dot active"></span>
+            <span onClick="activeDot(1)" class="dot"></span>
+            <span onClick="activeDot(2)" class="dot"></span>
+            <span onClick="activeDot(3)" class="dot"></span>
+            <span onClick="activeDot(4)" class="dot"></span>
+            <span onClick="activeDot(5)" class="dot"></span>
+            <span onClick="activeDot(6)" class="dot"></span>
         </div>
-    </section>-->
+    </section>
+
+    <section id="reviews">
+        <h1 class="review-title">Don't Just Take it From Us...</h1>
+        <h3 class="review-sub-title">Let Our Customers Do the Talkng!</h3>
+        <div class="row card-container">
+            <div class="review-container col-3">
+                <img src="images/brian.jpg" alt="Brian-C" class="review-image">
+                <h3 class="review-name">Brian C.</h3>
+                <p class="review-text">"Thank you for your excellent service<br> which has proved to be of great value."</p>
+                <span class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+            </div>
+
+            <div class="review-container col-3">
+                <img src="images/bobie.jpg" alt="Bobie-S" class="review-image">
+                <h3 class="review-name">Bobie S.</h3>
+                <p class="review-text">"I am so pleased with the garden. The<br>design is so simple and elegant and you<br>were so receptive to my brief and budget.<br>The team that worked were excellent."</p>
+                <span class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+            </div>
+            
+            <div class="review-container col-3">
+                <img src="images/suzan.jpg" alt="Susan-R" class="review-image">
+                <h3 class="review-name">Susan R.</h3>
+                <p class="review-text">"Thank you all for such a rare and<br>apperciated quality of service. We will<br>have no hesitation in recommending you<br>to our friends."</p>
+                <span class="stars">&#9733; &#9733; &#9733; &#9733; &#9733; </span>
+            </div>
+            
+        </div>
+       
+    </section>
 </body>
 </html>

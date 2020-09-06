@@ -1,181 +1,161 @@
 
-/* Background class for background color and image in section homepage */
-.background-homepage {
-    height: 80vh;
-    background: linear-gradient(#fff, #ACDE80);
+  /******* Phone Styles  *********/
+    /* Galaxy fold styles */
+@media screen and (max-width:280px) {
+
+    .logo {
+        height: 12rem;
+        width: 12rem;
+    }
+
+    .slogan {
+        font-size: 1rem;
+    }
+
+    .download-button-android {
+        margin: 1rem;
+        padding: 0.5rem;
+    }
+
+    .download-button-apple {
+        margin: 1rem;
+        padding: 0.5rem;
+    }
+
+    .small-sunflower, .big-sunflower {
+        display: none;
+    }
+
+
 }
 
-/* Styles for background gradient */
+    /* Moto G4, Galaxy 5, iphone 5 styles */
+@media screen and (min-width:281px) and (max-width:360px) {
 
-.background-grad {
-    width:40%;
-    text-align: center;
-    padding: 3% 5%;
+    .logo {
+        height: 15rem;
+        width: 15rem;
+    }
+
+    .slogan {
+        font-size: 1.2rem;
+    }
+
+    .download-button-android {
+        margin: 1rem;
+    }
+
+    .download-button-apple {
+        margin: 1rem;
+    }
+
+    .small-sunflower, .big-sunflower {
+        display: none;
+    }
+
 }
 
-.logo {
-    height: 40%;
-    width: 50%;
+    /* Pixel 2 and 2xl, iphone 6-8, iphone x styles */
+@media screen and (min-width:361px) and (max-width:414px){
+
+    .logo {
+        height: 15rem;
+        width: 15rem;
+    }
+
+    .left-container {
+        padding-top: 12rem;
+    }
+
+    .slogan {
+        font-size: 1.3rem;
+    }
+
+    .small-sunflower, .big-sunflower {
+        display: none;
+    }
 }
 
-.slogan {
-    font-family: 'Indie Flower', cursive;
-    color: #21810A;
-    font-size: 1.2rem;
-    margin-top: 10%;
-}
+    /* Surface duo styles */
+@media screen and (min-width:450px) and (max-width:700px){
 
-.download-button-android {
-    margin: 10% 3% 3%;
-}
-
-.download-button-apple {
-    margin: 10% 3% 3%;
-}
-
-
-
-
-/* Styles for the background image*/
-.background-image {
-    height: 100%;
-    width: 60%;
-    clip-path: polygon(25% 0, 100% 0%, 100% 100%, 9% 100%);
-}
-
-/* Styles for features section */
-#features {
+    .logo {
+        height: 15rem;
+        width: 15rem;
+    }
     
-    height: 80vh;
-}
+    .left-container {
+        padding-top: 8rem;
+    }
 
-.feature-par {
-    height: 70%;
-    text-align: center;
-}
 
-.feature {
-    text-align: center;
-    padding-top: 7%;
-}
+    .slogan {
+        font-size: 1.3rem;
+    }
 
-.feature-icon {
-    color: #21810A;
-}
+    .small-sunflower, .big-sunflower {
+        display: none;
+    }
 
-.feature-icon:hover {
-    color: #ACDE80;
-}
-
-.feature-title {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    padding: 3% 0;
+    .left-flowers {
+        text-align: left;
+    }
 
 }
 
-.feature-text {
-    font-family: 'Indie Flower', cursive;
+    /* Ipad styles*/
+@media screen and (min-width:768px) and (max-width:768px){
+
+    .left-container {
+        padding: 14rem 10rem;
+
+    }
+
+
+    .slogan {
+        font-size: 2rem;
+    }
+
+    .sunflowers-par {
+        padding-top: 9rem;
+    }
 }
 
-.sunflowers-par {
-    height: 30%;
-}
+   /* Ipad styles*/
+@media screen and (min-width:769px) and (max-width:1023px){
 
-.left-flowers {
-    text-align: left;
-}
+    .left-container {
+        padding: 6rem 6rem;
 
-.right-flowers {
-    text-align: right;
-}
+    }
 
-.big-sunflower {
-    height: 100%;
-    width: 10%;
 
-}
+    .slogan {
+        font-size: 2rem;
+    }
 
-/* Styles for slide show page */
-
-#image-slideshow {
-    height: 80vh;
-    width: 100vw;
-    margin-top: auto;
-    background: linear-gradient( #ACDE80,#fff);
-}
-
-.slideshow-container {
-    height: 80%;
-    width: 100%;
-    position: relative;
-    padding-top: 7%;
-
-}
-.slide-show {
-    width: 100%;
-    height: 320px;
-    text-align: center;
-    margin: auto;
-}
-
-#slide-image {
-    width:100%;
-    height: 320px;
-}
-
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 60%;
-    padding: 1%;
-    color: white;
-    font-weight: bold;
-    font-size: 1.2rem;
 
 }
 
-.prev {
-    left: 1%;
-}
+    /* Ipad pro styles*/
+@media screen and (min-width:1024px) and (max-width:1024px){
 
-.next {
-    right: 0.1%;
-}
-/* BLack ground when hover on the arrows*/
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-}
+    .left-container {
+        padding: 30rem 0;
+        padding-left: 3rem;
 
-.caption-text {
-    color: white;
-    text-align: center;
-    background-color: #222;
-    padding: 2% 3%;
-}
+    }
 
 
-.dots{
-    height: 20%;
-    position: absolute;
-    left: 44%;
-    margin-top: 7%;
+    .slogan {
+        font-size: 2.3rem;
+    }
 
-}
+    .sunflowers-par {
+        padding-top: 16rem;
+    }
 
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-
-}
-
-.active, .dot:hover {
-
-    background-color: #717171;
-
+    .feature-par {
+        padding-top: 20rem;
+    }
 }
