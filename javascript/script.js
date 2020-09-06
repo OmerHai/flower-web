@@ -67,7 +67,7 @@ function activeDot(imageNumber) {
 function showSlides(imageNumber, plusOrMinus) {
     var i;
     var dots = document.getElementsByClassName("dot");
-    var currentImage = document.getElementByID("slide-image");
+    var currentImage = document.getElementById("slide-image");
     var captionText = document.getElementsByClassName("caption-text");
     var backText = document.getElementsByClassName("back-text");
     var backHeader = document.getElementsByClassName("back-header");
